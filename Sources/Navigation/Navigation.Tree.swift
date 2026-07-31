@@ -45,7 +45,7 @@ extension Navigation {
     /// Identities are unique across a whole tree, not merely within a level, so
     /// ``contains(_:)`` and ``pop(to:)`` mean the same thing at any depth. The
     /// operations here enforce that; mint every placement from one
-    /// ``Navigation/Identity/Source`` and it holds by construction.
+    /// ``Navigation/Source`` and it holds by construction.
     public struct Tree<Value> {
         /// The destination this level starts from.
         public private(set) var root: Navigation.Destination<Value>
