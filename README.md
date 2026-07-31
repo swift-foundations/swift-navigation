@@ -34,7 +34,7 @@ enum Screen: Hashable, Sendable {
     case inbox, message(Int), composer, attachments
 }
 
-var source = Navigation.Identity.Source()
+var source = Navigation.Source()
 func place(_ screen: Screen) -> Navigation.Destination<Screen> {
     Navigation.Destination(identity: source.mint(), value: screen)
 }

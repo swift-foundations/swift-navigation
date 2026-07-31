@@ -9,7 +9,7 @@ extension Navigation {
     /// two stacks contaminating each other.
     ///
     /// ```swift
-    /// var source = Navigation.Identity.Source()
+    /// var source = Navigation.Source()
     /// func place(_ screen: Screen) -> Navigation.Destination<Screen> {
     ///     Navigation.Destination(identity: source.mint(), value: screen)
     /// }

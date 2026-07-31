@@ -18,7 +18,7 @@ import Testing
 
     /// Mints placements so a test reads as a sequence of navigations.
     struct Placer {
-        var source = Navigation.Identity.Source()
+        var source = Navigation.Source()
 
         mutating func callAsFunction(_ screen: Screen) -> Navigation.Destination<Screen> {
             Navigation.Destination(identity: source.mint(), value: screen)
@@ -376,8 +376,8 @@ extension `Navigation Tree Tests`.Integration {
 
         let identities = navigation.identities
 
-        #expect(identities.count == 6)
-        #expect(Set(identities).count == 6)
+        #expect(identities.count == 5)
+        #expect(Set(identities).count == 5)
         for identity in identities {
             #expect(navigation.contains(identity))
         }
