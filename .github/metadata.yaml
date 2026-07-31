@@ -1,0 +1,9 @@
+# .github/metadata.yaml
+description: "Tree-based navigation state for Swift — levels of identified destinations composed through presentations, Foundation-free and shell-independent."
+topics:
+  - foundations
+  - navigation
+  - state
+homepage: "https://swift-institute.org"
+readme:
+  family: E
