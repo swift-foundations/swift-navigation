@@ -19,15 +19,19 @@ import Testing
     /// Mints placements so a test reads as a sequence of navigations.
     struct Placer {
         var source = Navigation.Source()
-
-        mutating func callAsFunction(_ screen: Screen) -> Navigation.Destination<Screen> {
-            Navigation.Destination(identity: source.mint(), value: screen)
-        }
     }
 
     static let sheet = Navigation.Presentation(mode: .modal, dismissal: .user)
     static let inspector = Navigation.Presentation(mode: .modeless, dismissal: .user)
     static let insistent = Navigation.Presentation(mode: .modal, dismissal: .program)
+}
+
+extension `Navigation Tree Tests`.Placer {
+    mutating func callAsFunction(
+        _ screen: `Navigation Tree Tests`.Screen
+    ) -> Navigation.Destination<`Navigation Tree Tests`.Screen> {
+        Navigation.Destination(identity: source.mint(), value: screen)
+    }
 }
 
 extension `Navigation Tree Tests`.Unit {
