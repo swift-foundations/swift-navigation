@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "swift-navigation",
+    name: "swift-navigation-composition",
     platforms: [
         .macOS("27"),
         .iOS("27"),
