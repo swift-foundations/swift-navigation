@@ -1,1 +1,1 @@
-@_exported public import Navigation_Primitives
+@_exported public import Navigation

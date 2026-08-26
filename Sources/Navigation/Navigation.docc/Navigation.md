@@ -21,7 +21,7 @@ once while a second modal presentation must nest inside the first, which is wher
 anyway.
 
 The vocabulary the tree is built from — placement, identity, ordering, presentation — belongs to
-`swift-navigation-primitives`, re-exported here.
+`swift-navigation`, re-exported here.
 
 ## What lives elsewhere
 

@@ -67,7 +67,7 @@ navigation.depth                                // 1
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/swift-foundations/swift-navigation.git", branch: "main")
+    .package(url: "https://github.com/swift-compositions/swift-navigation.git", branch: "main")
 ]
 ```
 
@@ -81,7 +81,7 @@ dependencies: [
 ```
 
 Requires Swift 6.3.3. Platform minimums: macOS 26, iOS 26, tvOS 26, watchOS 26, visionOS 26. The
-only dependency is `swift-navigation-primitives`, which the module re-exports; no Foundation is
+only dependency is `swift-navigation`, which the module re-exports; no Foundation is
 imported anywhere.
 
 > **Name collision.** The package name `swift-navigation` collides with an unrelated external
@@ -102,7 +102,7 @@ One library product over a single source module, re-exporting the L1 vocabulary.
 |------|---------|
 | `Navigation.Tree` | One level: a root destination, a stack above it, and the levels it presents. |
 | `Navigation.Presented` | A level shown over another, paired inseparably with the presentation showing it. |
-| `Navigation.Destination`, `Navigation.Stack`, `Navigation.Presentation`, `Navigation.Identity` | Re-exported from `swift-navigation-primitives`. |
+| `Navigation.Destination`, `Navigation.Stack`, `Navigation.Presentation`, `Navigation.Identity` | Re-exported from `swift-navigation`. |
 
 ### What lives elsewhere
 

@@ -18,13 +18,13 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/swift-primitives/swift-navigation-primitives.git", branch: "main"),
+        .package(url: "https://github.com/swift-molecules/swift-navigation.git", branch: "main"),
     ],
     targets: [
         .target(
             name: "Navigation",
             dependencies: [
-                .product(name: "Navigation Primitives", package: "swift-navigation-primitives"),
+                .product(name: "Navigation", package: "swift-navigation"),
             ]
         ),
         .testTarget(
